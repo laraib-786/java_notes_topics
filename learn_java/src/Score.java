@@ -6,10 +6,10 @@ public class Score{
         this.scores = scores;
     }
 
-    public int calculatePercentage(){
-        int total = 0;
-        for(int i=0;i<scores.size();i++){
-            total += scores.get(i);
+    public double getPercentage(){
+        double total = 0;
+        for (Integer score : scores) {
+            total += score;
         }
         return total/scores.size();
     }
